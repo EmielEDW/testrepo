@@ -2,19 +2,48 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Over Mij</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobooth Verhuur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welkom op mijn persoonlijke pagina!</h1>
+  <header class="hero">
+    <h1>Huur onze Photobooth</h1>
+    <p>Maak elk feest onvergetelijk</p>
   </header>
-  <section class="intro">
-    <p>Hallo! Ik ben <span class="name">John Doe</span>, een enthousiaste webontwikkelaar.</p>
-    <p>Ik hou van programmeren, design en nieuwe technologieën ontdekken.</p>
-  </section>
+  <main>
+    <section class="info">
+      <h2>Over de photobooth</h2>
+      <p>Onze photobooth is perfect voor bruiloften, bedrijfsevenementen en verjaardagen. Inclusief eenvoudige bediening en instant digitale foto's.</p>
+    </section>
+    <section class="booking">
+      <h2>Reserveer nu</h2>
+      <form id="booking-form">
+        <label>Naam
+          <input type="text" name="name" required>
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Datum
+          <input type="text" id="booking-date" name="date" required>
+        </label>
+        <fieldset>
+          <legend>Extra opties</legend>
+          <label><input type="checkbox" name="extra" value="props"> Props pakket</label>
+          <label><input type="checkbox" name="extra" value="backdrop"> Achtergrond op maat</label>
+          <label><input type="checkbox" name="extra" value="prints"> Directe prints</label>
+        </fieldset>
+        <button type="submit">Verstuur aanvraag</button>
+      </form>
+    </section>
+  </main>
   <footer>
-    <p>&copy; 2023 John Doe</p>
+    <p>&copy; 2023 Photobooth Verhuur</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
 </body>
 </html>
